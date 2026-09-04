@@ -65,6 +65,9 @@ mkdir -p /tmp/nginx-body /tmp/nginx-proxy /tmp/nginx-fastcgi /tmp/nginx-uwsgi /t
 chown -R "$UID_GID" /tmp/nginx-body /tmp/nginx-proxy /tmp/nginx-fastcgi /tmp/nginx-uwsgi /tmp/nginx-scgi
 log "nginx will listen on ${LISTEN_PORT}"
 
+log "waiting for the database and creating it if missing"
+su-exec "$UID_GID" php /railway-db.php
+
 # Upstream's own initialisation: restores the storage skeleton, caches config,
 # runs migrations, seeds, and creates the first account. It only runs when the
 # first argument is supervisord or php-fpm, so it is invoked explicitly here and

@@ -21,12 +21,16 @@ ENV FILESYSTEM_DISK=debian_docker \
     APP_DEBUG=false \
     SELF_HOSTED=true \
     REQUIRE_HTTPS=false \
-    IN_USER_EMAIL=admin@example.com
+    IN_USER_EMAIL=admin@example.com \
+    DB_DATABASE=ninja \
+    DB_USERNAME=root \
+    DB_PORT=3306
 
 COPY nginx.conf /etc/nginx/nginx.conf.template
 COPY php-fpm-railway.conf /usr/local/etc/php-fpm.d/zzz-railway.conf
 COPY supervisord.conf /etc/supervisord.railway.conf
 COPY railway-seed.php /railway-seed.php
+COPY railway-db.php /railway-db.php
 COPY railway-entrypoint.sh /usr/local/bin/railway-entrypoint.sh
 RUN chmod +x /usr/local/bin/railway-entrypoint.sh
 
