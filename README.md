@@ -1,5 +1,9 @@
 # Invoice Ninja for Railway
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/invoice-ninja-or-just-updated-freshbooks?referralCode=Z1xivh&utm_medium=integration&utm_source=template&utm_campaign=generic)
+
+**Deploy on Railway:** [Invoice Ninja template](https://railway.com/deploy/invoice-ninja-or-just-updated-freshbooks?referralCode=Z1xivh&utm_medium=integration&utm_source=template&utm_campaign=generic)
+
 Wrapper image behind the Railway template for [Invoice Ninja](https://invoiceninja.com)
 5.13.37, the open-source invoicing and billing platform.
 
