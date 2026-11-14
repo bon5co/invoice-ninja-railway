@@ -3,7 +3,7 @@
 # Wraps the official Invoice Ninja image. Everything a deployer would otherwise
 # have to type is baked in here, because Railway drops a literal defaultValue at
 # template-generate time and publishes the variable as a blank required field.
-FROM invoiceninja/invoiceninja:5.13.53
+FROM invoiceninja/invoiceninja:5.13.37
 
 USER root
 
