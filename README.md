@@ -5,7 +5,7 @@
 **Deploy on Railway:** [Invoice Ninja template](https://railway.com/deploy/invoice-ninja-or-just-updated-freshbooks?referralCode=Z1xivh&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
 Wrapper image behind the Railway template for [Invoice Ninja](https://invoiceninja.com)
-5.13.37, the open-source invoicing and billing platform.
+5.13.53, the open-source invoicing and billing platform.
 
 ## What it changes
 
@@ -40,4 +40,4 @@ Everything else has one sane value on Railway and is baked into the image.
 
 ## Image
 
-`ghcr.io/bon5co/invoice-ninja-railway:5.13.37`
+`ghcr.io/bon5co/invoice-ninja-railway:5.13.53`
